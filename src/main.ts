@@ -12,10 +12,7 @@ async function bootstrap() {
 
   // CORS - allow your Vercel frontend
   app.enableCors({
-    origin: [
-      process.env.FRONTEND_URL,
-      'http://localhost:3000',
-    ],
+    origin: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     credentials: true,
   });
